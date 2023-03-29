@@ -6,12 +6,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-   
     "test:watch": "jest --watchAll",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "test": "vitest",
-     "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@formkit/themes": "^0.16.4",

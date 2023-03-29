@@ -13,7 +13,7 @@ const password = ref("")
 
 var config = {
   method: 'get',
-  url: 'http://localhost:3000/useradmin',
+  url: 'http://localhost:3000/usuarios',
 };
 
 
@@ -36,7 +36,7 @@ const formtData = ref({
 
 function getDataAdmin(data) {
     if (useradmin.value == data.username && password.value == data.password){
-    window.location.href = "/intranet"
+     window.location.href = "/intranet"
     } else if (useradmin.value!= data.username || password.value!= data.password){
       alert("Usuario o contraseña incorrectos")
     }
@@ -58,14 +58,14 @@ function getDataAdmin(data) {
       <FormKit type="text"
        label="User Name"
         name="username"
-        validation="required"
+        
         />
 
       <FormKit
       type="password"
       name="password"
       label="Password"
-      validation="required"
+      
     />
 
       </FormKit>
